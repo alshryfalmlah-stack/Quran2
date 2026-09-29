@@ -1,0 +1,7 @@
+streamlit
+pandas
+reportlab
+arabic-reshaper
+python-bidi
+supabase
+psycopg2-binary
