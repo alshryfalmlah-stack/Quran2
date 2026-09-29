@@ -34,7 +34,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# تخصيص التصميم المحدث والأنيق بألوان أنثوية (Rose / Purple Theme)
+# تخصيص التصميم المحدث بألوان بنفسجية هادئة ومريحة للعين (Muted Lavender Theme)
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
@@ -43,17 +43,17 @@ st.markdown("""
         font-family: 'Cairo', sans-serif !important;
         direction: rtl;
         text-align: right;
-        background-color: #FFF5F7;
+        background-color: #F7F5FA;
     }
 
     .main-header-container {
-        background: linear-gradient(135deg, #9D174D 0%, #BE185D 50%, #E11D48 100%);
+        background: linear-gradient(135deg, #6B5B95 0%, #8370B9 50%, #9683EC 100%);
         padding: 24px 20px;
         border-radius: 16px;
         color: white;
         text-align: center;
         margin-bottom: 20px;
-        box-shadow: 0 10px 25px -5px rgba(190, 24, 93, 0.25);
+        box-shadow: 0 10px 25px -5px rgba(150, 131, 236, 0.25);
     }
     .main-title {
         font-size: 26px;
@@ -65,20 +65,20 @@ st.markdown("""
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 6px;
-        color: #FFE4E6;
+        color: #F0EDF9;
     }
     .sub-title {
         font-size: 13px;
-        color: #FECDD3;
+        color: #E2DCF7;
         margin-bottom: 0px;
     }
 
     .user-top-bar {
         background: white;
-        border: 1px solid #FBCFE8;
+        border: 1px solid #DDD6F3;
         padding: 12px 18px;
         border-radius: 12px;
-        color: #831843;
+        color: #4A3E6D;
         font-size: 13px;
         font-weight: 600;
         margin-bottom: 16px;
@@ -87,15 +87,15 @@ st.markdown("""
         align-items: center;
         flex-wrap: wrap;
         gap: 10px;
-        box-shadow: 0 4px 6px -1px rgba(190, 24, 93, 0.05);
+        box-shadow: 0 4px 6px -1px rgba(150, 131, 236, 0.05);
     }
     
     .teacher-banner {
-        background: linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 100%);
-        border: 1px solid #FBCFE8;
+        background: linear-gradient(135deg, #F3F0FA 0%, #EAE5F7 100%);
+        border: 1px solid #DDD6F3;
         padding: 14px 18px;
         border-radius: 12px;
-        color: #9D174D;
+        color: #5C4B89;
         font-size: 14px;
         font-weight: 700;
         margin-bottom: 16px;
@@ -104,19 +104,19 @@ st.markdown("""
         align-items: center;
         flex-wrap: wrap;
         gap: 10px;
-        box-shadow: 0 4px 6px -1px rgba(190, 24, 93, 0.05);
+        box-shadow: 0 4px 6px -1px rgba(150, 131, 236, 0.05);
     }
 
     .section-header {
         text-align: right;
-        color: #831843;
+        color: #4A3E6D;
         font-weight: 700;
         font-size: 16px;
         margin-top: 12px;
         margin-bottom: 12px;
-        border-right: 4px solid #DB2777;
+        border-right: 4px solid #9683EC;
         padding-right: 10px;
-        background-color: #FCE7F3;
+        background-color: #EAE5F7;
         padding-top: 6px;
         padding-bottom: 6px;
         border-radius: 0 8px 8px 0;
@@ -132,13 +132,13 @@ st.markdown("""
         text-align: right;
         display: block;
         font-weight: 600;
-        color: #831843;
+        color: #4A3E6D;
         font-size: 13px;
     }
     
     .stButton button {
         width: 100%;
-        background: linear-gradient(135deg, #DB2777 0%, #BE185D 100%);
+        background: linear-gradient(135deg, #9683EC 0%, #8370B9 100%);
         color: white;
         font-weight: 700;
         border-radius: 10px;
@@ -146,11 +146,11 @@ st.markdown("""
         padding: 10px 18px;
         font-size: 14px;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 12px rgba(219, 39, 119, 0.25);
+        box-shadow: 0 4px 12px rgba(150, 131, 236, 0.25);
     }
     .stButton button:hover {
-        background: linear-gradient(135deg, #BE185D 0%, #9D174D 100%);
-        box-shadow: 0 6px 16px rgba(190, 24, 93, 0.35);
+        background: linear-gradient(135deg, #8370B9 0%, #6B5B95 100%);
+        box-shadow: 0 6px 16px rgba(131, 112, 185, 0.35);
         transform: translateY(-1px);
     }
 
@@ -161,7 +161,7 @@ st.markdown("""
 
     .stTabs [data-baseweb="tab-list"] {
         gap: 6px;
-        background-color: #FCE7F3;
+        background-color: #EAE5F7;
         padding: 6px;
         border-radius: 12px;
     }
@@ -170,14 +170,14 @@ st.markdown("""
         background-color: white;
         border-radius: 8px;
         font-weight: 600;
-        color: #831843;
+        color: #4A3E6D;
         font-size: 13px;
         padding: 0 14px;
     }
     .stTabs [aria-selected="true"] {
-        background-color: #DB2777 !important;
+        background-color: #9683EC !important;
         color: white !important;
-        box-shadow: 0 2px 8px rgba(219, 39, 119, 0.3);
+        box-shadow: 0 2px 8px rgba(150, 131, 236, 0.3);
     }
     </style>
 """, unsafe_allow_html=True)
@@ -391,11 +391,11 @@ def generate_teachers_summary_pdf(teachers_summary_df):
     styles = getSampleStyleSheet()
     title_style = ParagraphStyle(
         'ArabicTitle', parent=styles['Heading1'], fontName=FONT_BOLD, fontSize=20,
-        leading=26, textColor=colors.HexColor('#9D174D'), alignment=1, spaceAfter=6
+        leading=26, textColor=colors.HexColor('#6B5B95'), alignment=1, spaceAfter=6
     )
     sub_style = ParagraphStyle(
         'ArabicSub', parent=styles['Normal'], fontName=FONT_NAME, fontSize=11,
-        leading=15, textColor=colors.HexColor('#BE185D'), alignment=1, spaceAfter=10
+        leading=15, textColor=colors.HexColor('#8370B9'), alignment=1, spaceAfter=10
     )
     
     story.append(Paragraph(fix_arabic("مكتب الأوقاف والشؤون الإسلامية - سلوق (قسم الطالبات)"), title_style))
@@ -419,7 +419,7 @@ def generate_teachers_summary_pdf(teachers_summary_df):
     
     t = Table(pdf_table_data, colWidths=col_widths, hAlign='CENTER')
     t.setStyle(TableStyle([
-        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#DB2777')),
+        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#9683EC')),
         ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
         ('ALIGN', (0,0), (-1,-1), 'CENTER'),
         ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
@@ -428,7 +428,7 @@ def generate_teachers_summary_pdf(teachers_summary_df):
         ('BOTTOMPADDING', (0,0), (-1,0), 6),
         ('TOPPADDING', (0,0), (-1,0), 6),
         ('BACKGROUND', (0,1), (-1,-1), colors.HexColor('#FFFFFF')),
-        ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#FBCFE8')),
+        ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#DDD6F3')),
         ('FONTSIZE', (0,1), (-1,-1), 9),
         ('BOTTOMPADDING', (0,1), (-1,-1), 5),
         ('TOPPADDING', (0,1), (-1,-1), 5),
@@ -447,11 +447,11 @@ def generate_students_list_pdf(teacher_name, center_name, students_df, report_ti
     styles = getSampleStyleSheet()
     title_style = ParagraphStyle(
         'ArabicTitle', parent=styles['Heading1'], fontName=FONT_BOLD, fontSize=20,
-        leading=26, textColor=colors.HexColor('#9D174D'), alignment=1, spaceAfter=6
+        leading=26, textColor=colors.HexColor('#6B5B95'), alignment=1, spaceAfter=6
     )
     sub_style = ParagraphStyle(
         'ArabicSub', parent=styles['Normal'], fontName=FONT_NAME, fontSize=11,
-        leading=15, textColor=colors.HexColor('#BE185D'), alignment=1, spaceAfter=10
+        leading=15, textColor=colors.HexColor('#8370B9'), alignment=1, spaceAfter=10
     )
     
     story.append(Paragraph(fix_arabic("مكتب الأوقاف والشؤون الإسلامية - سلوق (قسم الطالبات)"), title_style))
@@ -478,7 +478,7 @@ def generate_students_list_pdf(teacher_name, center_name, students_df, report_ti
     
     t = Table(pdf_table_data, colWidths=col_widths, hAlign='CENTER')
     t.setStyle(TableStyle([
-        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#DB2777')),
+        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#9683EC')),
         ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
         ('ALIGN', (0,0), (-1,-1), 'CENTER'),
         ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
@@ -487,7 +487,7 @@ def generate_students_list_pdf(teacher_name, center_name, students_df, report_ti
         ('BOTTOMPADDING', (0,0), (-1,0), 6),
         ('TOPPADDING', (0,0), (-1,0), 6),
         ('BACKGROUND', (0,1), (-1,-1), colors.HexColor('#FFFFFF')),
-        ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#FBCFE8')),
+        ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#DDD6F3')),
         ('FONTSIZE', (0,1), (-1,-1), 9),
         ('BOTTOMPADDING', (0,1), (-1,-1), 5),
         ('TOPPADDING', (0,1), (-1,-1), 5),
@@ -506,11 +506,11 @@ def generate_teacher_attendance_pdf(teacher_name, center_name, month_name, year_
     styles = getSampleStyleSheet()
     title_style = ParagraphStyle(
         'ArabicTitle', parent=styles['Heading1'], fontName=FONT_BOLD, fontSize=20,
-        leading=26, textColor=colors.HexColor('#9D174D'), alignment=1, spaceAfter=6
+        leading=26, textColor=colors.HexColor('#6B5B95'), alignment=1, spaceAfter=6
     )
     sub_style = ParagraphStyle(
         'ArabicSub', parent=styles['Normal'], fontName=FONT_NAME, fontSize=11,
-        leading=15, textColor=colors.HexColor('#BE185D'), alignment=1, spaceAfter=8
+        leading=15, textColor=colors.HexColor('#8370B9'), alignment=1, spaceAfter=8
     )
     
     story.append(Paragraph(fix_arabic("مكتب الأوقاف والشؤون الإسلامية - سلوق (قسم الطالبات)"), title_style))
@@ -522,7 +522,7 @@ def generate_teacher_attendance_pdf(teacher_name, center_name, month_name, year_
     pdf_table_data = [table_headers]
     
     row_styles = [
-        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#DB2777')),
+        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#9683EC')),
         ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
         ('ALIGN', (0,0), (-1,-1), 'CENTER'),
         ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
@@ -530,7 +530,7 @@ def generate_teacher_attendance_pdf(teacher_name, center_name, month_name, year_
         ('FONTSIZE', (0,0), (-1,0), 8),
         ('BOTTOMPADDING', (0,0), (-1,0), 3),
         ('TOPPADDING', (0,0), (-1,0), 3),
-        ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#FBCFE8')),
+        ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#DDD6F3')),
         ('FONTSIZE', (0,1), (-1,-1), 8),
         ('BOTTOMPADDING', (0,1), (-1,-1), 2.5),
         ('TOPPADDING', (0,1), (-1,-1), 2.5),
@@ -547,7 +547,7 @@ def generate_teacher_attendance_pdf(teacher_name, center_name, month_name, year_
         
         status_val = str(row.get('status', ''))
         if "عطلة" in status_val:
-            row_styles.append(('BACKGROUND', (0, idx), (-1, idx), colors.HexColor('#FCE7F3')))
+            row_styles.append(('BACKGROUND', (0, idx), (-1, idx), colors.HexColor('#EAE5F7')))
         elif "إجازة" in status_val:
             row_styles.append(('BACKGROUND', (0, idx), (-1, idx), colors.HexColor('#FEF3C7')))
         elif "غياب" in status_val:
@@ -678,7 +678,7 @@ else:
                 st.metric("المنقطعات / المنقولات", inactive_count)
                 
             st.markdown("<br>", unsafe_allow_html=True)
-            st.markdown('<p style="font-weight: bold; color: #831843; font-size: 15px;">🔍 البحث والتصفية حسب نطاق سورة الحفظ (لجميع المراكز)</p>', unsafe_allow_html=True)
+            st.markdown('<p style="font-weight: bold; color: #4A3E6D; font-size: 15px;">🔍 البحث والتصفية حسب نطاق سورة الحفظ (لجميع المراكز)</p>', unsafe_allow_html=True)
             
             col_s1, col_s2 = st.columns(2)
             with col_s1:
@@ -1020,7 +1020,7 @@ else:
                 
                 st.dataframe(display_users_df, use_container_width=True, hide_index=True)
                 
-                st.markdown('<p style="text-align: right; font-weight: bold; font-size: 15px; color: #831843; margin-top: 15px; margin-bottom: 10px;">حذف مستخدمة من النظام</p>', unsafe_allow_html=True)
+                st.markdown('<p style="text-align: right; font-weight: bold; font-size: 15px; color: #4A3E6D; margin-top: 15px; margin-bottom: 10px;">حذف مستخدمة من النظام</p>', unsafe_allow_html=True)
                 
                 current_logged_username = str(st.session_state.get('current_username', '')).strip()
                 removable_users = current_users_df[current_users_df['username'].astype(str).str.strip() != current_logged_username]['username'].tolist()
@@ -1558,11 +1558,11 @@ else:
                     styles = getSampleStyleSheet()
                     title_style = ParagraphStyle(
                         'ArabicTitle', parent=styles['Heading1'], fontName=FONT_BOLD, fontSize=20,
-                        leading=26, textColor=colors.HexColor('#9D174D'), alignment=1, spaceAfter=6
+                        leading=26, textColor=colors.HexColor('#6B5B95'), alignment=1, spaceAfter=6
                     )
                     sub_style = ParagraphStyle(
                         'ArabicSub', parent=styles['Normal'], fontName=FONT_NAME, fontSize=11,
-                        leading=15, textColor=colors.HexColor('#BE185D'), alignment=1, spaceAfter=8
+                        leading=15, textColor=colors.HexColor('#8370B9'), alignment=1, spaceAfter=8
                     )
                     
                     story.append(Paragraph(fix_arabic("مكتب الأوقاف والشؤون الإسلامية - سلوق (قسم الطالبات)"), title_style))
@@ -1583,7 +1583,7 @@ else:
                     
                     t = Table(pdf_table_data, colWidths=col_widths, hAlign='CENTER')
                     t.setStyle(TableStyle([
-                        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#DB2777')),
+                        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#9683EC')),
                         ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
                         ('ALIGN', (0,0), (-1,-1), 'CENTER'),
                         ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
@@ -1592,7 +1592,7 @@ else:
                         ('BOTTOMPADDING', (0,0), (-1,0), 5),
                         ('TOPPADDING', (0,0), (-1,0), 5),
                         ('BACKGROUND', (0,1), (-1,-1), colors.HexColor('#FFFFFF')),
-                        ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#FBCFE8')),
+                        ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#DDD6F3')),
                         ('FONTSIZE', (0,1), (-1,-1), 8),
                         ('BOTTOMPADDING', (0,1), (-1,-1), 6),
                         ('TOPPADDING', (0,1), (-1,-1), 6),
